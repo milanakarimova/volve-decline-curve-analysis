@@ -122,6 +122,4 @@ The detailed technical report is available here:
 
     reports/technical_report.md
 
-## Portfolio Value
 
-This project demonstrates petroleum production analytics, decline curve fitting, SQL-based production aggregation, visualization, and technical reporting using real well-production data.
