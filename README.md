@@ -1,6 +1,6 @@
 # Volve Field Decline Curve Analysis
 
-Petroleum engineering project analyzing real Volve field well-production data using Python, Pandas, NumPy, Matplotlib, and decline curve analysis.
+Petroleum engineering project analyzing real Volve field well-production data using Python, SQL, Pandas, NumPy, Matplotlib, and decline curve analysis.
 
 ## Dataset
 
@@ -15,24 +15,25 @@ The project uses monthly well-production data, including oil, gas, water, inject
 - Perform decline curve analysis
 - Estimate monthly and annual decline rates
 - Visualize actual vs fitted oil production
-- Summarize petroleum engineering findings
+- Create SQL-based well production summaries
+- Summarize findings in a technical report
 
 ## Methodology
 
-The project applies exponential decline curve analysis:
+This project applies exponential decline curve analysis:
 
     q(t) = qi * exp(-D * t)
 
 Where:
 
-- q(t): production rate at time t
-- qi: initial production rate
+- q(t): oil production at time t
+- qi: estimated initial production rate
 - D: decline rate
 - t: time in months
 
 ## Tech Stack
 
-Python, Pandas, NumPy, Matplotlib, scikit-learn, Excel, Git, GitHub
+Python, SQL, SQLite, Pandas, NumPy, Matplotlib, scikit-learn, Excel, Git, GitHub
 
 ## How to Run
 
@@ -44,16 +45,21 @@ Clean the data:
 
     python src/clean_data.py
 
+Run SQL analysis:
+
+    python src/run_sql_analysis.py
+
 Run decline curve analysis:
 
     python src/decline_curve.py
 
 ## Outputs
 
-- Cleaned production dataset
+- Cleaned monthly production dataset
+- SQL-based well production summaries
 - Decline curve results table
-- Actual vs fitted production plots
-- Field/well-level decline rate estimates
+- Actual vs fitted oil production plots
+- Detailed technical report
 
 ## Project Structure
 
@@ -62,14 +68,25 @@ Run decline curve analysis:
       processed/
     src/
       clean_data.py
+      run_sql_analysis.py
       decline_curve.py
+    sql/
+      well_production_summary.sql
+      yearly_well_production.sql
     reports/
       figures/
+      sql_results/
       decline_curve_results.csv
-    sql/
+      technical_report.md
     requirements.txt
     README.md
 
+## Technical Report
+
+The detailed technical report is available here:
+
+    reports/technical_report.md
+
 ## Portfolio Value
 
-This project demonstrates petroleum production analysis, decline curve fitting, technical interpretation, and Python-based engineering data analysis.
+This project demonstrates petroleum production analytics, decline curve fitting, SQL-based production aggregation, visualization, and technical reporting using real well-production data.
