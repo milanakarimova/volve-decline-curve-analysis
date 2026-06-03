@@ -60,29 +60,43 @@ Run decline curve analysis:
 - Decline curve results table
 - Actual vs fitted oil production plots
 - Detailed technical report
-## Visualizations
+## Visualizations and Interpretation
 
 ### Monthly Oil Production by Wellbore
 
 ![Monthly Oil Production by Wellbore](reports/figures/monthly_oil_production_by_wellbore.png)
 
+This figure shows monthly oil production trends for each wellbore. It helps compare production behavior over time and identify wells with stronger production performance, unstable output, or clear decline patterns.
+
 ### Cumulative Oil Production by Wellbore
 
 ![Cumulative Oil Production by Wellbore](reports/figures/cumulative_oil_production_by_wellbore.png)
+
+This plot shows cumulative oil production for each wellbore. Wells with steeper cumulative curves contributed more total oil production, while flatter curves indicate lower or declining contribution.
 
 ### Total Oil Production by Wellbore
 
 ![Total Oil Production by Wellbore](reports/figures/total_oil_production_by_wellbore.png)
 
+This bar chart compares total oil production across wellbores. It identifies the main producing wells and highlights which wellbores had the largest contribution to total field production.
+
 ### Oil vs Water Production Over Time
 
 ![Oil vs Water Production Over Time](reports/figures/oil_vs_water_production_over_time.png)
+
+This figure compares total oil and water production over time. Increasing water production relative to oil may indicate reservoir maturity, water breakthrough, or changing production conditions.
 
 ### Average Water Cut by Wellbore
 
 ![Average Water Cut by Wellbore](reports/figures/average_water_cut_by_wellbore.png)
 
-## Project Structure
+This chart shows average water cut by wellbore. Higher water cut values suggest that a larger share of produced fluids is water, which can be important for evaluating well performance and production efficiency.
+
+### Decline Curve Analysis
+
+Decline curve plots compare actual oil production with the fitted exponential decline model for selected wellbores.
+
+These plots help evaluate how well a simple exponential decline model represents post-peak production behavior. A close match between actual and fitted curves suggests a more stable decline trend, while large deviations may indicate operational changes, shut-ins, production interruptions, or reservoir complexity.## Project Structure
 
     data/
       raw/
