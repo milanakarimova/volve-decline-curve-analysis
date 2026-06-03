@@ -60,6 +60,27 @@ Run decline curve analysis:
 - Decline curve results table
 - Actual vs fitted oil production plots
 - Detailed technical report
+## Visualizations
+
+### Monthly Oil Production by Wellbore
+
+![Monthly Oil Production by Wellbore](reports/figures/monthly_oil_production_by_wellbore.png)
+
+### Cumulative Oil Production by Wellbore
+
+![Cumulative Oil Production by Wellbore](reports/figures/cumulative_oil_production_by_wellbore.png)
+
+### Total Oil Production by Wellbore
+
+![Total Oil Production by Wellbore](reports/figures/total_oil_production_by_wellbore.png)
+
+### Oil vs Water Production Over Time
+
+![Oil vs Water Production Over Time](reports/figures/oil_vs_water_production_over_time.png)
+
+### Average Water Cut by Wellbore
+
+![Average Water Cut by Wellbore](reports/figures/average_water_cut_by_wellbore.png)
 
 ## Project Structure
 
